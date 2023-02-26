@@ -8,9 +8,15 @@ import { Slip } from './model/slip';
   styleUrls: ['./advice.component.scss'],
 })
 export class AdviceComponent implements OnInit {
-  advice: Slip;
+  advice: Slip | null;
 
   constructor(private adviceService: AdviceService) {}
+
+  handleClick(): void {
+    this.adviceService.getAdvice().subscribe((response) => {
+      this.advice = response.slip;
+    });
+  }
 
   ngOnInit(): void {
     this.adviceService.getAdvice().subscribe((response) => {
