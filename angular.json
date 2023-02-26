@@ -84,7 +84,10 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://slothsan.github.io/frontend-mentor-advice-generator-angular/"
+          }
         }
       }
     }
