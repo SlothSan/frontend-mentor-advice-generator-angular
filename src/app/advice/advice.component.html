@@ -1,4 +1,4 @@
-<main class="advice-container">
+<main *ngIf="this.advice" class="advice-container">
   <h1 class="advice-title">ADVICE #{{ this.advice.id }}</h1>
   <p class="advice-text">"{{ this.advice.advice }}"</p>
   <img
