@@ -1,0 +1,9 @@
+@import "../shared/sharedstyles.scss";
+
+.advice-container {
+  width: 343px;
+  height: 315px;
+  background-color: $dark-grayish-blue;
+  margin: 120px auto 0 auto;
+  border-radius: 10px;
+}
